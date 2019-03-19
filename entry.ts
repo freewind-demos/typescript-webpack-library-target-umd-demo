@@ -1,3 +1,5 @@
-require('./index.css')
+export function hello(name: string) {
+  return `Hello, ${name}!`;
+}
 
-document.write('The body should have a yellow background color now')
+document.getElementById('main')!.innerText = hello('webpack');

@@ -6,19 +6,13 @@ const config: Configuration = {
   entry: './entry.ts',
   output: {
     path: __dirname,
-    filename: 'bundle.js'
+    filename: 'dist/bundle.js',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [{
-      test: /\.css$/,
-      use: [
-        {loader: 'style-loader'},
-        {loader: 'css-loader'}
-      ]
-    }, {
-      test: /\.tsx?$/,
-      loader: 'ts-loader',
-      exclude: /node_modules/
+      test: /\.ts$/,
+      loader: 'ts-loader'
     }]
   },
   plugins: [

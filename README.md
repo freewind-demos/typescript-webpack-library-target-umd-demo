@@ -1,7 +1,5 @@
-Webpack Config File in TypeScript Demo
+Webpack Config "libraryTarget" "umd" Demo
 ======================================
-
-Use typescript to write webpack config file.
 
 ```
 npm install
